@@ -183,7 +183,7 @@ section h2 {
 	font-size: 30px;
 	font-size: clamp(25px, 5vw, 35px);
 	color:#00c4b0;
-	margin-top: 10vh;
+	
 }
 
 
@@ -261,7 +261,7 @@ section h2 {
 /* ==============================================  ABOUT SECTION======================================== */
 #about{
 	position: relative;
-	height: 100vh;
+	
 	
 }
 #about h2{
