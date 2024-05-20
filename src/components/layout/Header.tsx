@@ -5,8 +5,10 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import ToggleTheme from "../shared/ToggleTheme";
 import { Stack } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 export default function Header() {
+  const navigate = useNavigate();
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
@@ -28,8 +30,8 @@ export default function Header() {
             {`{YS}`}
           </Typography>
           <Stack direction="row">
-            <Button>Home</Button>
-            <Button>Resume</Button>
+            <Button onClick={() => navigate("/")}>Home</Button>
+            <Button onClick={() => navigate("/resume")}>Resume</Button>
             <Button>Projects</Button>
             <ToggleTheme />
           </Stack>

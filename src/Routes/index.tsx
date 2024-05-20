@@ -4,6 +4,7 @@ import Error from "../pages/error";
 import { Box, Grid, Toolbar } from "@mui/material";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
+import Resume from "../pages/resume";
 
 const AppRouter = () => {
   return (
@@ -11,7 +12,7 @@ const AppRouter = () => {
       <Routes>
         <Route element={<Wrapper />}>
           <Route path="/" element={<Home />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>

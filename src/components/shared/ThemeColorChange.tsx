@@ -12,7 +12,7 @@ const ThemeColorChange = () => {
   const colorScheme = React.useContext(ColorSchemeContext);
 
   return (
-    <Stack spacing={2}>
+    <Stack spacing={1}>
       {Object.keys(primarySecondaryGroup).map((key) => (
         <Paper key={key}>
           <Stack
