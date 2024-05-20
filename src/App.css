@@ -1,5 +1,9 @@
-body{
+html {
+  font-size: 62.5%; /* 62.5% of 16px = 10px */
+}
+
+body {
   padding: 0;
-  border: 0;
-  box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box; 
 }
