@@ -14,7 +14,7 @@ const ThemeColorChange = () => {
   return (
     <Stack spacing={2}>
       {Object.keys(primarySecondaryGroup).map((key) => (
-        <Paper>
+        <Paper key={key}>
           <Stack
             sx={{
               cursor: "pointer",

@@ -107,7 +107,13 @@ const getTheme = (mode: mode, colorScheme: ColorSchemeKey): ThemeOptions => {
       MuiButton: {
         styleOverrides: {
           root: {
+            borderRadius: 30,
             textTransform: "none",
+          },
+          sizeLarge: {
+            padding: "12px 24px",
+
+            fontWeight: 600,
           },
         },
       },

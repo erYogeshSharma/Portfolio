@@ -1,6 +1,7 @@
 import {
   Avatar,
   Box,
+  Button,
   Container,
   Grow,
   Stack,
@@ -55,6 +56,23 @@ const Home = () => {
             </Typography>
           </Grow>
           <TechStack />
+
+          <Container maxWidth="sm">
+            <Stack
+              mt={2}
+              width="100%"
+              direction={{ xs: "column", sm: "row" }}
+              alignItems="center"
+              spacing={2}
+            >
+              <Button size="large" fullWidth variant="contained">
+                Get in touch
+              </Button>
+              <Button size="large" fullWidth variant="outlined">
+                Download Resume
+              </Button>
+            </Stack>
+          </Container>
         </Stack>
       </Container>
     </Box>
