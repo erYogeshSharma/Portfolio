@@ -71,7 +71,13 @@ const Home = () => {
               >
                 Get in touch
               </Button>
-              <Button size="large" fullWidth variant="outlined">
+              <Button
+                href="https://drive.google.com/file/d/1IsZ-AlgfRufqw29Acm_D5JqVLFkwI0i8/view?usp=sharing"
+                target="_blank"
+                size="large"
+                fullWidth
+                variant="outlined"
+              >
                 Download Resume
               </Button>
             </Stack>
