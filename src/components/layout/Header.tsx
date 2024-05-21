@@ -31,8 +31,8 @@ export default function Header() {
           </Typography>
           <Stack direction="row">
             <Button onClick={() => navigate("/")}>Home</Button>
-            <Button onClick={() => navigate("/resume")}>Resume</Button>
-            <Button>Projects</Button>
+            <Button onClick={() => navigate("/resume")}>About</Button>
+            <Button onClick={() => navigate("/projects")}>Projects</Button>
             <ToggleTheme />
           </Stack>
         </Toolbar>

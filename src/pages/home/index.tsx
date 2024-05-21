@@ -10,16 +10,6 @@ import {
 } from "@mui/material";
 import image from "../../assets/yogesh.png";
 
-/**
- * 
-- [Silas Rodrigues](https://silasrodrigues.vercel.app)
-- [Simon Knott](https://simonknott.de)
-- [Sivaramakrishnan](https://portfoliov2-lovat-ten.vercel.app/)
-- [Siyana Zdravkova](https://szwebdeveloper.netlify.app)
-- [Sneha Ratnani](https://www.sneharatnani.com)
-- [Soham Mondal](https://sohammondal.com)
-- [Sourabh Kothari](https://sourabhkothari.vercel.app)
-*/
 import GradientSpan from "../../components/shared/GradientSpan";
 import TechStack from "../../components/shared/TechStack";
 
@@ -38,13 +28,12 @@ const Home = () => {
           />
           <Grow in timeout={2000}>
             <Typography variant="h3" fontWeight={600}>
-              I do code and make <GradientSpan>Content</GradientSpan>
-              &nbsp; about it!
+              Hi, I am <GradientSpan>Yogesh Sharma</GradientSpan>.
             </Typography>
           </Grow>
-          <Grow in timeout={2000}>
+          <Grow in timeout={1000}>
             <Typography variant="body1" color="text.secondary">
-              Welcome to my portfolio! I'm Yogesh, a seasoned full-stack
+              {/* Welcome to my portfolio! I'm Yogesh, a seasoned full-stack
               software engineer with over 4 years of professional experience,
               specializing in backend development. My expertise lies in crafting
               robust and scalable SaaS architectures on the Amazon AWS platform.
@@ -52,9 +41,16 @@ const Home = () => {
               technologies, I am dedicated to building high-performance web
               applications. Explore my projects to see how I leverage modern
               technologies to create efficient and innovative solutions. Let’s
-              collaborate and bring your vision to life!
+              collaborate and bring your vision to life! */}
+              Welcome to my portfolio! I'm Yogesh, a full-stack software
+              engineer with 4+ years of experience, specializing in backend
+              development. I excel in building robust SaaS architectures on AWS
+              and high-performance web applications. Explore my projects to see
+              my work with modern technologies. Let’s collaborate and bring your
+              vision to life!
             </Typography>
           </Grow>
+
           <TechStack />
 
           <Container maxWidth="sm">

@@ -1,56 +1,6 @@
-import mongoLogo from "../../assets/icons/mongo.png";
-import reactLogo from "../../assets/icons/react.png";
-import typescriptLogo from "../../assets/icons/typescript.png";
-import tailwindLogo from "../../assets/icons/tailwindCSS.png";
-import nodeLogo from "../../assets/icons/nodejs.png";
-import nextJsLogo from "../../assets/icons/nextjs.png";
-import materialUiLogo from "../../assets/icons/materialUI.png";
-import awsLogo from "../../assets/icons/aws.png";
 import { Stack, Tooltip, Typography, useMediaQuery } from "@mui/material";
-const technologies = [
-  {
-    title: "TypeScript",
-    image: typescriptLogo,
-    experience: "3 years",
-  },
-  {
-    title: "React",
-    image: reactLogo,
-    experience: "4 years",
-  },
-  {
-    title: "Material-UI",
-    image: materialUiLogo,
-    experience: "4 years",
-  },
-  {
-    title: "TailwindCSS",
-    image: tailwindLogo,
-    experience: "2 years",
-  },
-  {
-    title: "MongoDB",
-    image: mongoLogo,
-    experience: "3 years",
-  },
-  {
-    title: "NodeJS",
-    image: nodeLogo,
-    experience: "3 years",
-  },
+import technologies from "../../utils/techStack";
 
-  {
-    title: "NextJS",
-    image: nextJsLogo,
-    experience: "1.5 years",
-  },
-
-  {
-    title: "AWS",
-    image: awsLogo,
-    experience: "1 year",
-  },
-];
 const TechStack = () => {
   const isSmallScreen = useMediaQuery("(max-width:600px)");
   return (

@@ -5,7 +5,9 @@ import {
   Brightness4,
   Brightness7,
   DarkMode,
+  DarkModeOutlined,
   LightMode,
+  LightModeOutlined,
 } from "@mui/icons-material";
 import ColorModeContext from "../../contexts/themeContext";
 import ThemeColorChange from "./ThemeColorChange";
@@ -63,11 +65,23 @@ const ToggleTheme = () => {
               }}
             >
               <Stack
+                direction="row"
+                alignItems="center"
+                justifyContent="space-between"
+              >
+                <Stack>
+                  {theme.palette.mode === "light" && <DarkModeOutlined />}
+                </Stack>
+                <Stack>
+                  {theme.palette.mode === "dark" && <LightModeOutlined />}
+                </Stack>
+              </Stack>
+              <Stack
                 sx={{
                   width: 30,
                   position: "absolute",
-                  top: "50%",
-                  left: theme.palette.mode === "dark" ? "8%" : "92%",
+                  top: "54%",
+                  left: theme.palette.mode === "dark" ? "8.010%" : "92.6%",
                   transform: "translate(-50%, -50%)",
                   transition: "0.8s",
                 }}
