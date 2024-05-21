@@ -3,9 +3,9 @@ import technologies from "../../utils/techStack";
 
 const TechCards = () => {
   return (
-    <Stack>
-      <Typography variant="body1" fontWeight={600}>
-        Tech I use
+    <Stack spacing={2}>
+      <Typography variant="h5" fontWeight={600}>
+        My Tech Stack
       </Typography>
       <Stack>
         <Grid container spacing={2}>
@@ -29,8 +29,7 @@ const TechCards = () => {
                       variant="caption"
                       color="text.secondary"
                     >
-                      {" "}
-                      {t.description}{" "}
+                      {t.description}
                     </Typography>
                     <Stack width="100%">
                       <Stack alignItems="flex-end">
@@ -45,9 +44,8 @@ const TechCards = () => {
                       />
                     </Stack>
                     <Typography variant="caption">
-                      {" "}
                       <b>Experience:</b>&nbsp;
-                      {t.experience}{" "}
+                      {t.experience}
                     </Typography>
                   </Stack>
                 </Stack>

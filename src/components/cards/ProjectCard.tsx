@@ -16,14 +16,26 @@ const ProjectCard = ({ project }: { project: Project }) => {
   return (
     <Paper variant="outlined">
       <Stack p={2} spacing={2}>
-        <video
-          ref={videoRef}
-          src={project.video}
-          autoPlay
-          loop
-          muted
-          style={{ width: "100%", height: "auto", borderRadius: "3px" }} // Adjust as needed
-        />
+        {project.isShowIframe ? (
+          <iframe
+            src={project.url}
+            style={{
+              width: "100%",
+              borderRadius: "3px",
+              border: "none",
+              height: 200,
+            }} // Adjust as needed
+          />
+        ) : (
+          <video
+            ref={videoRef}
+            src={project.video}
+            autoPlay
+            loop
+            muted
+            style={{ width: "100%", height: "auto", borderRadius: "3px" }} // Adjust as needed
+          />
+        )}
 
         <Stack direction="row" alignItems="center" spacing={2}>
           <Stack height={50} alignItems="flex-start">
@@ -42,16 +54,16 @@ const ProjectCard = ({ project }: { project: Project }) => {
             </IconButton>
           </Tooltip>
         </Stack>
-        <Stack>
+        <Stack height={{ xs: "auto", md: 220 }}>
           <Typography fontWeight={600} variant="caption">
             Description
           </Typography>
-          <Typography color="text.secondary" variant="subtitle2">
+          <Typography color="text.secondary" variant="caption">
             {" "}
             {project.description}{" "}
           </Typography>
         </Stack>
-        <Stack mt={2} spacing={1}>
+        <Stack mt={2} spacing={1} height={{ xs: "auto", md: 200 }}>
           <Typography fontWeight={600} variant="caption">
             Tech Used
           </Typography>

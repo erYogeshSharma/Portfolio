@@ -12,8 +12,10 @@ import image from "../../assets/yogesh.png";
 
 import GradientSpan from "../../components/shared/GradientSpan";
 import TechStack from "../../components/shared/TechStack";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
   const isSmallScreen = useMediaQuery("(max-width:600px)");
   return (
     <Box p={2}>
@@ -61,7 +63,12 @@ const Home = () => {
               alignItems="center"
               spacing={2}
             >
-              <Button size="large" fullWidth variant="contained">
+              <Button
+                onClick={() => navigate("about#contact")}
+                size="large"
+                fullWidth
+                variant="contained"
+              >
                 Get in touch
               </Button>
               <Button size="large" fullWidth variant="outlined">

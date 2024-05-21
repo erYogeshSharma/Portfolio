@@ -22,16 +22,17 @@ export default function Header() {
       >
         <Toolbar>
           <Typography
+            onClick={() => navigate("/")}
             variant="h6"
             fontWeight={600}
             component="div"
-            sx={{ flexGrow: 1 }}
+            sx={{ flexGrow: 1, cursor: "pointer" }}
           >
             {`{YS}`}
           </Typography>
           <Stack direction="row">
             <Button onClick={() => navigate("/")}>Home</Button>
-            <Button onClick={() => navigate("/resume")}>About</Button>
+            <Button onClick={() => navigate("/about")}>About</Button>
             <Button onClick={() => navigate("/projects")}>Projects</Button>
             <ToggleTheme />
           </Stack>

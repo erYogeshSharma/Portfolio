@@ -72,7 +72,7 @@ const technologies = [
     title: "NextJS",
     image: nextJsLogo,
     experience: "1.5 years",
-    percent: 40,
+    percent: 70,
     description:
       "A React framework for server-side rendering and static site generation.",
   },

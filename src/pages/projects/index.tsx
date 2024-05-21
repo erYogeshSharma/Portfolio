@@ -1,17 +1,24 @@
-import { Box, Grid } from "@mui/material";
+import { Box, Grid, Stack, Typography } from "@mui/material";
 import ProjectCard from "../../components/cards/ProjectCard";
 import projects from "../../utils/projects";
 
 const Projects = () => {
   return (
     <Box p={2}>
-      <Grid container spacing={2}>
-        {projects.map((p) => (
-          <Grid item xs={12} md={6}>
-            <ProjectCard project={p} />
+      <Stack spacing={2}>
+        <Typography variant="h5" fontWeight={600}>
+          My Personal Projects
+        </Typography>
+        <Stack>
+          <Grid container spacing={2}>
+            {projects.map((p) => (
+              <Grid item xs={12} md={6}>
+                <ProjectCard project={p} />
+              </Grid>
+            ))}
           </Grid>
-        ))}
-      </Grid>
+        </Stack>
+      </Stack>
     </Box>
   );
 };
