@@ -18,6 +18,11 @@ const Projects = () => {
             ))}
           </Grid>
         </Stack>
+        <Typography textAlign="center" variant="body2" color="text.secondary">
+          Hey folks! Quick note: Some projects are snoozing due to downtime. I'm
+          spicing them up. Meanwhile, explore what's already bubbling! Stay
+          tuned for more fun updates!
+        </Typography>
       </Stack>
     </Box>
   );

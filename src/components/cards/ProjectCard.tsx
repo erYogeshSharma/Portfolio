@@ -23,7 +23,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
               width: "100%",
               borderRadius: "3px",
               border: "none",
-              height: 200,
+              height: 208,
             }} // Adjust as needed
           />
         ) : (
@@ -54,7 +54,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
             </IconButton>
           </Tooltip>
         </Stack>
-        <Stack height={{ xs: "auto", md: 220 }}>
+        <Stack height={{ xs: "auto", md: 240 }}>
           <Typography fontWeight={600} variant="caption">
             Description
           </Typography>
@@ -63,7 +63,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
             {project.description}{" "}
           </Typography>
         </Stack>
-        <Stack mt={2} spacing={1} height={{ xs: "auto", md: 200 }}>
+        <Stack mt={2} spacing={1} height={{ xs: "auto", md: 180 }}>
           <Typography fontWeight={600} variant="caption">
             Tech Used
           </Typography>
