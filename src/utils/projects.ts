@@ -60,6 +60,41 @@ const projects = [
       },
     ],
   },
+  {
+    video: video,
+    name: "ToDo",
+    icon: photobooth,
+    isShowIframe: true,
+    url: "https://todo.yogeshh.me/",
+    description:
+      "ToDo is a simple task management app that helps users organize their daily activities. This project demonstrates my ability to create responsive web applications with a clean and intuitive user interface. Users can add, edit, and delete tasks, ensuring a seamless experience for organizing their day-to-day activities.",
+    stack: [
+      {
+        name: "React",
+        icon: techLogos.react,
+      },
+      {
+        name: "Node",
+        icon: techLogos.node,
+      },
+      {
+        name: "MongoDB",
+        icon: techLogos.mongo,
+      },
+      {
+        name: "Typescript",
+        icon: techLogos.typescript,
+      },
+      {
+        name: "EC2",
+        icon: techLogos.aws,
+      },
+      {
+        name: "Github Actions",
+        icon: techLogos.githubActions,
+      },
+    ],
+  },
 ];
 export default projects;
 
