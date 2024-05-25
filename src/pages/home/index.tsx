@@ -35,15 +35,6 @@ const Home = () => {
           </Grow>
           <Grow in timeout={1000}>
             <Typography variant="body1" color="text.secondary">
-              {/* Welcome to my portfolio! I'm Yogesh, a seasoned full-stack
-              software engineer with over 4 years of professional experience,
-              specializing in backend development. My expertise lies in crafting
-              robust and scalable SaaS architectures on the Amazon AWS platform.
-              With a solid foundation in both front-end and back-end
-              technologies, I am dedicated to building high-performance web
-              applications. Explore my projects to see how I leverage modern
-              technologies to create efficient and innovative solutions. Let’s
-              collaborate and bring your vision to life! */}
               Welcome to my portfolio! I'm Yogesh, a full-stack software
               engineer with 4+ years of experience, specializing in backend
               development. I excel in building robust SaaS architectures on AWS
@@ -72,7 +63,7 @@ const Home = () => {
                 Get in touch
               </Button>
               <Button
-                href="https://drive.google.com/file/d/1IsZ-AlgfRufqw29Acm_D5JqVLFkwI0i8/view?usp=sharing"
+                href="https://drive.google.com/file/d/1YHkGxs1yL8knKrqC3a4apZaS5mAHZi4Z/view?usp=sharing"
                 target="_blank"
                 size="large"
                 fullWidth
