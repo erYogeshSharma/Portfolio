@@ -11,6 +11,7 @@ import ColorModeContext from "./contexts/themeContext";
 import AppRouter from "./Routes";
 import { ColorSchemeKey } from "./utils/colorGroup";
 import ColorSchemeContext from "./contexts/colorSchemeContext";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const localMode = localStorage.getItem("mode") as "light" | "dark";
@@ -53,6 +54,7 @@ function App() {
       <ColorSchemeContext.Provider value={colorGroup}>
         <ThemeProvider theme={theme}>
           <CssBaseline />
+          <Analytics />
           <AppRouter />
         </ThemeProvider>
       </ColorSchemeContext.Provider>
